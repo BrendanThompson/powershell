@@ -21,4 +21,3 @@
     }  
     $host.ui.rawui.foregroundColor = $origFg 
 }
-echo meow
