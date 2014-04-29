@@ -6,6 +6,7 @@
 ### ---------------------------------------------------------------------------
 
 $powershell="~\.powershell"
+$functions="$powershell\functions"
 
 ### ---------------------------------------------------------------------------
 ### General Settings
@@ -17,7 +18,10 @@ Set-Location C:\
 ### Load Function Files
 ### ---------------------------------------------------------------------------
 
-. ~\.powershell\functions\files.ps1
+. $functions\files.ps1
+. $functions\sudo.ps1
+. $functions\remote-administration.ps1
+. $functions\Get-ComputerDetails.ps1
 
 ### ---------------------------------------------------------------------------
 ### Load Aliases
