@@ -19,13 +19,18 @@ Set-Location C:\
 ### ---------------------------------------------------------------------------
 
 . $functions\files.ps1
-. $functions\sudo.ps1
 . $functions\remote-administration.ps1
 . $functions\Get-ComputerDetails.ps1
+. $functions\sudo.ps1
+. $functions\psh.ps1
+
 
 ### ---------------------------------------------------------------------------
 ### Load Aliases
 ### ---------------------------------------------------------------------------
+
+Set-Alias psudo $functions\psudo.ps1
+Set-Alias touch $functions\touch.ps1
 
 ### ---------------------------------------------------------------------------
 ### Import Modules
